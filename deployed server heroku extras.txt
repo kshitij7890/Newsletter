@@ -1,0 +1,40 @@
+Heroku server for Newsletter
+https://morning-meadow-01584.herokuapp.com/
+
+deployed using git and heroku
+i downloaded both things and did my work on bash.exe in hyper terminal
+both are working
+i have made 2 commit till yet initial commit and commit with success title corrected
+dont forget mail chimp where my newsletter data is automatically uploaded
+
+
+steps :
+1. SETUP
+heroku --version
+git --version
+node --version
+npm --version
+heroku login
+git config --global user.name "Kshitij Kumar"
+git config --global user.email kshitijsingla7890@gmail.com
+
+
+2. PREPARE APP
+in app.js change port from 3000 to process.env.PORT || 3000
+//works on both local and dyanamic
+
+3.PROCFILE
+create "Procfile" in main folder
+and in it type : web: node app.js
+
+4.SAVE TO GIT first time
+git init
+git add .
+git commit -m "write something"
+heroku create(at this stage be logged in)
+git push heroku master(wait .....2 min)
+
+5.CHANGES AND UPDATES(heroku logs shows mistakes)
+git add .
+git commit -m "dfsarvsrg"
+git push heroku master(wait .....2 min)
